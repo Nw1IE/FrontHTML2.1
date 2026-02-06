@@ -24,6 +24,17 @@ header {
     text-align: center;
 }
 
+.my-div {
+     background-color: #f0f0f0;
+    padding: 20px;
+    transition: all 0.3s ease; 
+}
+
+.my-div:hover {
+    background-color: #ff7a45; 
+    color: #fa8253; 
+    cursor: pointer;
+}
 
 header img {
     margin-bottom: 15px;
@@ -157,6 +168,7 @@ article span, article p {
     line-height: 1.5;
 }
 
+
 main > section:last-of-type {
     background-color: #f2f2f2;
     padding: 100px 0 150px;
@@ -207,6 +219,7 @@ main > section:last-of-type article h2 {
     font-size: 22px;
     margin-bottom: 5px;
 }
+
 
 h1 {
     text-align:center;
