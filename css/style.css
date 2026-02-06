@@ -31,7 +31,7 @@ header {
 }
 
 .my-div:hover {
-    background-color: #ff7a45; 
+    background-color: #ff9971; 
     color: #fa8253; 
     cursor: pointer;
 }
@@ -128,15 +128,15 @@ main > section:first-of-type span {
     line-height: 1.6;
     display: block;
     margin-top: 20px;
-    z-index: 2;
+    z-index: 1;
 }
 
 main > div {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     max-width: 1240px;
-    margin: 0 auto 80px;
+    margin: 0 auto 40px;
 }
 
 article {
@@ -170,14 +170,17 @@ article span, article p {
 
 
 main > section:last-of-type {
-    background-color: #f2f2f2;
-    padding: 100px 0 150px;
+     background-color: #f2f2f2;
+    padding: -5px 0 150px; 
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: -10px; 
     overflow: hidden;
+    margin-top: -10px; 
+    z-index: 0; 
 }
 
 main > section:last-of-type::before {
@@ -188,6 +191,9 @@ main > section:last-of-type::before {
     background: white;
     border-radius: 50%;
     z-index: 0;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 main > section:last-of-type::after {
@@ -207,16 +213,16 @@ main > section:last-of-type * {
 }
 
 main > section:last-of-type h2 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 main > section:last-of-type article {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 main > section:last-of-type article h2 {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
