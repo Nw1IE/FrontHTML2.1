@@ -3,6 +3,7 @@
     --text-dark: #333;
     --font-main: "Montserrat", sans-serif;
     --font-classic: "Times New Roman", serif;
+    --hover-text-color:var(--accent);
 }
 
 body {
@@ -23,17 +24,11 @@ header {
     text-align: center;
 }
 
-.my-div {
-     background-color: #f0f0f0;
-    padding: 20px;
-    transition: all 0.3s ease; 
-}
+article h2:hover {
+    accent-color: var(--accent);
+      cursor: pointer;
+} 
 
-.my-div:hover {
-    background-color: #ff9971; 
-    color: #fa8253; 
-    cursor: pointer;
-}
 
 header img {
     margin-bottom: 15px;
@@ -51,9 +46,24 @@ header img {
     margin: 0 12px;
 }
 
-.nav-link {
+.my-divs {
     text-decoration: none;
     color: #555;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.my-divs:hover {
+    color: var(--accent); 
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -233,28 +243,33 @@ h2 {
     text-align: center;
     font-size: 18px;
     letter-spacing: 2px;
-    margin: 40px 0;
+    margin: 5px 0;
     text-transform: uppercase;
 }
 
 h3
 {
     text-align:center;
-    color:white;
+    color:black;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 40px 0;
+    text-transform: uppercase;
 }
 
 button {
     background-color: var(--accent);
     color: white;
     border: none;
-    padding: 12px 40px;
+    padding: 12px 45px;
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 button:hover {
