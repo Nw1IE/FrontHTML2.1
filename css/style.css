@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding-top: 100px; 
     background-color: #f9f9f9;
-    font-family: var(--font-main);
     background-color: #f9f9f9;
 }
 
@@ -110,7 +109,6 @@ main > section:first-of-type img {
 }
 
 main > section:first-of-type h2 {
-    font-family: var(--font-main);
     font-size: 56px;
     color: white !important;
     text-transform: uppercase;
@@ -151,9 +149,7 @@ article img {
 }
 
 article h2 {
-    font-family: var(--font-classic);
     font-weight: bolder;
-    text-transform: none;
     text-align: left;
     font-size: 20px;
     margin: 15px 0;
@@ -171,7 +167,7 @@ article span, article p {
 
 main > section:last-of-type {
      background-color: #f2f2f2;
-    padding: -5px 0 150px; 
+    padding: 0px 0 150px; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -280,8 +276,8 @@ footer {
 }
 
 footer img {
-    width: 50;
-    height: 50;
+    width: 250px;
+    height: 70px;
 }
 
 .footer-section a, .footer-section li{
